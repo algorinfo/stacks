@@ -1,3 +1,6 @@
 [submodule "datascience"]
 	path = datascience
 	url = https://github.com/algorinfo/datascience
+[submodule "dataenv"]
+	path = dataenv
+	url = https://github.com/algorinfo/dataenv
