@@ -4,3 +4,6 @@
 [submodule "dataenv"]
 	path = dataenv
 	url = https://github.com/algorinfo/dataenv
+[submodule "flask_template"]
+	path = flask_template
+	url = https://github.com/algorinfo/flask_template
