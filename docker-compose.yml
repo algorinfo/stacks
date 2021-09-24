@@ -1,0 +1,37 @@
+version: "3.5"
+volumes:
+  datadb:
+  pgdata:
+
+services:
+  postgres:
+    image: postgres:12-alpine
+    env_file: .env.postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - 0.0.0.0:5432:5432
+    networks:
+      - devenv
+  redis:
+    image: redis:6-alpine
+    ports:
+      - 0.0.0.0:6379:6379
+    networks:
+      - devenv
+  pgadmin:
+    image: dpage/pgadmin4
+    # restart: always
+    ports:
+      - 127.0.0.1:9080:8080
+    networks:
+      - devenv
+  rawdata:
+    image: nuxion/rawdata
+    ports:
+      - 0.0.0.0:6667:6667
+    networks:
+      - devenv
+    
+networks:
+  devenv: 
