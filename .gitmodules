@@ -7,3 +7,6 @@
 [submodule "flask_template"]
 	path = flask_template
 	url = https://github.com/algorinfo/flask_template
+[submodule "sanic_template"]
+	path = sanic_template
+	url = https://github.com/algorinfo/sanic_template
