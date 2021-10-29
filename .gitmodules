@@ -10,3 +10,6 @@
 [submodule "sanic_template"]
 	path = sanic_template
 	url = https://github.com/algorinfo/sanic_template
+[submodule "fileserver"]
+	path = fileserver
+	url = https://github.com/algorinfo/fileserver

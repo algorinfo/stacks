@@ -84,6 +84,9 @@ So feel free to fix any grammar or error that you could found here, I try my bes
 
 ## Changelog
 
+### 2021-10-29
+- Fileserver repo added
+
 ### 2021-08-17
 - I'm adding a new use case for stacks. 
 Usually I work having a `docker-compose.yml` file by project. With the proliferation of differents services with common dependencies this approach starts to break a little bit the principle of DRY. So as developer I want to have only one place to start a developent environment for any project. 
